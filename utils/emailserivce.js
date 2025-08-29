@@ -4,8 +4,8 @@ const APP_NAME = "Royale Cleaners";
 
 const transporter = nodemailer.createTransport({
   host: "mail.privateemail.com", // SMTP host for Namecheap email
-  port: 465, // Use 465 for SSL or 587 for TLS
-  secure: true, // true for port 465, false for port 587
+  port: 587, // Use 465 for SSL or 587 for TLS
+  secure: false, // true for port 465, false for port 587
   auth: {
     user: "info@royalecleaners.co.uk", // your business email
     pass: "Rexroy2025#", // password from Namecheap email account
@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 
 transporter.verify((err, success) => {
   if (err) {
-    console.log("Mailing failed to verify.", err);
+    console.log("Mailing failed to to to verify.", err);
   } else {
     console.log("Mailing verified", success);
   }
