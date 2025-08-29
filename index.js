@@ -27,7 +27,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use('/api/v2', authRouter);
 
 app.get('/', (req, res) => {
-    res.send('index');
+    res.send('welcome to the server');
 });
 
 
@@ -173,3 +173,5 @@ app.post('/book-appointment', (req, res) => {
 app.listen(port, ()=>{
     console.log(`server running at http://localhost:${port}/`)
 });
+
+module.exports = app;

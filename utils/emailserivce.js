@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
   port: 587, // Use 465 for SSL or 587 for TLS
   secure: false, // true for port 465, false for port 587
   auth: {
-    user: "info@royalecleaners.co", // your business email
-    pass: "Rexroy2025", // password from Namecheap email account
+    user: "info@royalecleaners.co.uk", // your business email
+    pass: "Rexroy2025#", // password from Namecheap email account
   },
 });
 
