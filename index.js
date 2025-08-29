@@ -6,7 +6,7 @@ const port = 2300;
 const path = require('path');
 const authRouter = require('./routes/authRouter');
 const {sendEmail} = require('./utils/emailserivce');
-const connectDB = require('./config/db');
+// const connectDB = require('./config/db');
 
 require('dotenv').config();
 
@@ -15,7 +15,7 @@ require('dotenv').config();
 
 
 
-connectDB();
+// connectDB();
 
 // app.use(express.static(path.join(__dirname, 'assets')));
 app.use(cors(
