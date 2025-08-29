@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-
+require('dotenv').config();
 const APP_NAME = "Royale Cleaners";
 
 const transporter = nodemailer.createTransport({
@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
   port: 587, // Use 465 for SSL or 587 for TLS
   secure: false, // true for port 465, false for port 587
   auth: {
-    user: "info@royalecleaners.co.uk", // your business email
-    pass: "Rexroy2025#", // password from Namecheap email account
+    user: process.env.EMAIL_USER, // your business email
+    pass: process.env.EMAIL_PASS, // password from Namecheap email account
   },
 });
 
