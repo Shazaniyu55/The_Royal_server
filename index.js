@@ -87,10 +87,11 @@ app.post('/send-email', (req, res) => {
   `
 ).then(() => {
         console.log("Contact form email sent successfully!");
+        res.json({ success: true, message: "Contact form email sent successfully" });
     }).catch((error) => {
         console.error("Error sending email:", error);
     });
-    res.json({ success: true, message: "Data received" });
+    
 });
 
 
